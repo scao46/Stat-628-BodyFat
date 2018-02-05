@@ -4,11 +4,12 @@
 This is a course project aims at coming up with a simple, precise, and accurate way of determining body fat percentage of males based on readily available clinical measurements. *BodyFat Analysis.ipynb* is an executive summary of the data analysis process and findings in Jupyter Notebook pattern. The result of analysis shows that the percentage of body fat of a male is strongly related with *Weight*, *Wrist* and *Abdomen*.
 
 There are three folders providing more details in our main project, *code*, *image* and *data*
+
 ### code
-There are 4 R code files *pre-clean.R*, *models.R*, *lasso.R* and *"multiplot.R"* in this folder. *pre-clean.R* is the file which cleans original data, removes outliers and comes up with a new dataset *new_BodyFat.Rdata*. *models.R* shows the process of using *new_BodyFat* to analyze and select models. *lasso.R* contains other methods like Lasso to do variable selection. *"multiplot.R"* is a reference plotting code helping us to make better graghs. 
+There are 4 R code files *data.R*, *mlr.R*, *lasso.R* and *"multiplot.R"* in this folder. *data.R* visualized the data, removes outliers and divides the data into a train set and validation set. *mlr.R* constructs multiple linear models to predict BodyFat%. *lasso.R* uses Lasso method to do variable selection and constructs linear models to predict BodyFat%. *"multiplot.R"* works as a hearder file, which contains a plotting function helping us to make better graghs. 
 
 ### image
-This is an image folder containing all the figures/images/tables produced in our analysis.
+This folder contains mainly the figures/images/tables produced in our analysis.
 
 ### data
 *BodyFat.csv* is the original 252 records of available measurements include age, weight, height, bmi, and various body circumference measurements. In particular, the variables listed below (from left to right in the data set) are: 
